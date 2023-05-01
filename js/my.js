@@ -8,7 +8,7 @@ const refs = {
 // let isActive = false;
 
 class Timer {
-    constructor(onTick) {
+    constructor({ onTick }) {
         this.intervalID = null;
         this.isActive = false;
         this.onTick = onTick;

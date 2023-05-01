@@ -25,7 +25,7 @@ class Timer {
 
         const startTime = Date.now();
         this.isActive = true;
-         this.intervalID = setInterval(() => {
+        this.intervalID = setInterval(() => {
             const currentTime = Date.now();
             const deltaTime = currentTime - startTime;
             const time = this.getTimeComponents(deltaTime);
@@ -53,7 +53,7 @@ class Timer {
 };
 
 const timer = new Timer({
-    onTick:updateClockface
+    onTick: updateClockface,
 });
 
 refs.startBtn.addEventListener('click', timer.start.bind(timer));

@@ -12,12 +12,12 @@ class Timer {
         this.intervalID = null;
         this.isActive = false;
         this.onTick = onTick;
-        this.init();
+        // this.init();
     }
-    init() {
-      const time = this.getTimeComponents(0);
-        this.onTick(0);  
-    }
+    // init() {
+    //   const time = this.getTimeComponents(0);
+    //     this.onTick(0);  
+    // }
      start() {
         if (this.isActive) {
             return;
@@ -53,7 +53,7 @@ class Timer {
 };
 
 const timer = new Timer({
-    onTick: updateClockface,
+    onTick: updateClockface
 });
 
 refs.startBtn.addEventListener('click', timer.start.bind(timer));

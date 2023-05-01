@@ -17,3 +17,8 @@ button{
    font-size: 18px;
    text-transform: uppercase;
 }
+.clockface{
+    font-size: 45px;
+    color: black;
+    
+}

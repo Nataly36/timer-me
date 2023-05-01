@@ -34,9 +34,9 @@ class Timer {
             }, 1000);
     }
         getTimeComponents(deltaTime) {
-            const hours =this.pad(Math.floor((time % (100 * 60 * 60 * 24)) / (1000 * 60 * 60)));
-            const mins =this.pad(Math.floor((time % (100 * 60 * 60)) / (1000 * 60)));
-            const secs = this.pad(Math.floor((time % (100 * 60)) / 1000));
+            const hours =this.pad(Math.floor((deltaTime % (100 * 60 * 60 * 24)) / (1000 * 60 * 60)));
+            const mins =this.pad(Math.floor((deltaTime % (100 * 60 * 60)) / (1000 * 60)));
+            const secs = this.pad(Math.floor((deltaTime % (100 * 60)) / 1000));
            
             return { hours, mins, secs };
     }

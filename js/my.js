@@ -12,7 +12,7 @@ class Timer {
         this.intervalID = null;
         this.isActive = false;
         this.onTick = onTick;
-        this.intit();
+        this.init();
     }
     init() {
       const time = this.getTimeComponents(0);

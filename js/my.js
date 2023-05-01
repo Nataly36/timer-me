@@ -20,7 +20,7 @@ const timer = {
         this.intervalID = setInterval(() => {
             const currentTime = Date.now();
             const deltaTime = currentTime - startTime;
-            const time = getTimeCmponents(deltaTime);
+            const time = getTimeComponents(deltaTime);
             updateClockface(time);
         }, 1000);
     },

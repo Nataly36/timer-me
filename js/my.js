@@ -5,10 +5,11 @@ const refs = {
     stopBtn:document.querySelector('button[data-action-stop]'),
     clockface:document.querySelector('.js-clockface')
 };
+let isActive = false;
 
 const timer = {
     intervalID: null,
-    isActive: false,
+  
     start() {
         if(isActive){
             return;

@@ -47,8 +47,8 @@ class Timer {
     stop(){
         clearInterval(this.intervalID);
         this.isActive = false;
-        const time = this.getTimeComponents(0);
-        // this.onTick(0);
+        // const time = this.getTimeComponents(0);
+        this.onTick(0);
 }
 };
 
